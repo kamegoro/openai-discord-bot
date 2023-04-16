@@ -14,13 +14,13 @@
 依存ライブラリのインストール
 
 ```sh
-$ python -m pip install -r requirements.txt
+$ python -m pip3 install -r requirements.txt
 ```
 
 discord.bot の起動
 
 ```sh
-python discord.py
+python3 discord.py
 ```
 
 ### ブランチの切り方
