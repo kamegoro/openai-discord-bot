@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 intents = discord.Intents.default()
+intents.messages = True
 
 bot = commands.Bot(command_prefix="/", intents=intents)
 
