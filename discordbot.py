@@ -12,6 +12,11 @@ bot = commands.Bot(command_prefix="/", intents=intents)
 
 
 @bot.event
+async def on_ready():
+    print("ログインしました")
+
+
+@bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = "".join(
