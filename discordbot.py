@@ -26,9 +26,14 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send("pong")
+@bot.event
+async def on_message(message):
+    if bot.user.mentioned_in(message):
+        if message.author.bot:
+            return
+
+        await message.channel.send(f"{message.author.mention} さん、何かご用ですか？")
+    await bot.process_commands(message)
 
 
 token = os.environ["DISCORD_TOKEN"]
