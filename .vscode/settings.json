@@ -38,7 +38,7 @@
     }
   ],
   "todo-tree.general.tags": ["HACK", "FIXME", "TODO", "NOTE"],
-  "cSpell.words": ["kamegoro", "dotenv"],
+  "cSpell.words": ["kamegoro", "dotenv", "openai"],
   "python.formatting.provider": "black", // フォーマッターをblackに設定
   "python.linting.pylintEnabled": false, // pyLintをオフに
   "python.linting.flake8Enabled": true, // flake8をオンに
