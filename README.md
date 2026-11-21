@@ -11,10 +11,18 @@
 
 ### 開発方法
 
+Python 3.13 を使用します(`.python-version`)。
+
 依存ライブラリのインストール
 
 ```sh
-$ python3 -m pip3 install -r requirements.txt
+$ python3 -m pip install -r requirements.txt
+```
+
+依存ライブラリを追加・更新する場合は `requirements.in` を編集し、ロックファイル `requirements.txt` を再生成します。
+
+```sh
+$ uv pip compile requirements.in -o requirements.txt --python-version 3.13
 ```
 
 discord.bot の起動

@@ -1,0 +1,5 @@
+discord.py==2.7.1
+flake8==7.5.0
+black==26.10.1
+python-dotenv==1.2.4
+openai==3.57.0
